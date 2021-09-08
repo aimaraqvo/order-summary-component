@@ -91,19 +91,23 @@ textarea {
    html {
 	  font-size: 16px;
   }
-  
+
   body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
     font-family: 'Red Hat Display', sans-serif;
     font-size: .875em;
     line-height: 1.50em;
     text-align: left;
-    background: url('../img/pattern-background-mobile.svg') center no-repeat;
-    background-size: cover;
     color: hsl(224, 23%, 55%);
+    background-color:hsl(225, 100%, 94%);
+  }
+
+  .body-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   background-image: url('../img/pattern-background-mobile.svg');
+    background-size: cover;
   }
    
   a {
@@ -131,14 +135,13 @@ textarea {
     align-items: stretch;
     flex-direction: column;
     margin: 10px;
-    
   }
     /*------------------- Mobile Styles -------------------*/
 
    /*---Order Body Styles---*/
-   .order-body {
-    width: 350px;
-    margin: 40px 0;
+   .card-body {
+    width: 325px;
+    margin: 45px 0 0;
     background-color:#fff;
     box-shadow: 0px 7px 29px 0px rgba(100, 100, 111, 0.2);
     border-radius: 20px;
@@ -146,7 +149,7 @@ textarea {
 
    /*-Order Header Styles-*/
   .hero-area {
-    background: url('../img/illustration-hero.svg') center no-repeat;
+    background-image: url('../img/illustration-hero.svg');
     background-size: cover;
     min-height: 200px;
     border-top-left-radius: 20px;
@@ -154,24 +157,24 @@ textarea {
   }
 
    /*-Order Main Styles-*/
-   .order-main .content-wrapper {
+   .card-main .content-wrapper {
      margin: 20px;
      padding: 0;
    }
 
    /*Order Description Section Styles*/
-   .order-description {
+   .card-description {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
    }
 
-   .order-description h1 {
+   .card-description h1 {
     margin: 0;
    }
 
-   .order-description p {
+   .card-description p {
      text-align: center;
      margin-top: 10px;
      padding: 0 10px;
@@ -179,20 +182,21 @@ textarea {
   
    /*Order Plan Section Styles*/
 
-   .order-plan {
+   .card-plan {
      background-color: hsl(225, 100%, 98%);
+     
      border-radius: 15px;
      box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
    }
 
-   .order-plan .content-wrapper {
+   .card-plan .content-wrapper {
     justify-content: space-evenly;
     flex-direction: row;
     margin-top: 0;
     margin-bottom: 10px;
    }
 
-   .order-plan figure {
+   .card-plan figure {
      margin-top: 10px;
    }
 
@@ -201,11 +205,11 @@ textarea {
      font-weight: 700;
    }
 
-   .order-plan a {
+   .card-plan a {
     font-weight: 700;
    }
 
-   .order-plan a:hover {
+   .card-plan a:hover {
     color: hsla(243, 59%, 76%, 1);
    }
 
@@ -220,12 +224,11 @@ textarea {
    }
 
    /*Order Plan Section Styles*/
-   .order-payment {
+   .card-payment {
      display: flex;
      flex-direction: column;
      align-items: center;
      justify-content: center;
-     /*margin-top: 20px;*/
    }
 
    .payment-btn {
@@ -241,7 +244,6 @@ textarea {
       margin: 20px 0;
       cursor:pointer;
       box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
-      /*box-shadow: 0px 2px 8px 0px rgba(99, 99, 99, 0.2);*/
     }
 
    .payment-btn:hover {
@@ -268,7 +270,7 @@ textarea {
    /*Footer section*/
    footer .attribution { 
     text-align: center; 
-    margin: 10px 0 0;
+    margin: 40px 0 0;
    }
 
    footer p {
@@ -276,11 +278,31 @@ textarea {
      margin: 0;
    }
 
-  .attribution a { 
-    color: hsl(245, 75%, 52%);
-   }
-   
-
+   /*To have the funny underline effect*/
+  .underline{
+    position: relative;
+    text-decoration: none;
+    color: hsl(224, 23%, 55%);
+  }
+  
+  .underline::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 2px;
+    background-color: hsl(163,76%,69%);
+    transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+  }
+  
+  @media (hover: hover) and (pointer: fine) {
+    .underline:hover::before{
+      left: 0;
+      right: auto;
+      width: 100%;
+    }
+  }
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -370,9 +392,22 @@ textarea {
    ========================================================================== */
    @media only screen and (min-width: 1440px) {
     /*Desktop styles here*/
-    body {
-      background: url('../img/pattern-background-desktop.svg') center no-repeat;
+
+    /*body {
+      background: url('../img/pattern-pattern-background-desktop.svg');
+    }*/
+
+    .body-wrapper {
+      background-image: url('../img/pattern-pattern-background-desktop.svg');
     }
+    
+      .card-body {
+      margin: 100px 0 0;
+    }
+
+    footer .attribution {  
+      margin: 100px 0 0;
+     }
 
    }/*--------------------min-width: 1440px Media queries ends here -----------------------*/
 
