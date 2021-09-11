@@ -99,15 +99,17 @@ textarea {
     text-align: left;
     color: hsl(224, 23%, 55%);
     background-color:hsl(225, 100%, 94%);
+    background-image: url(../img/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: contain;
   }
-
+  /*To keep the card and the footer vertically align*/
   .body-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-   background-image: url('../img/pattern-background-mobile.svg');
-    background-size: cover;
   }
    
   a {
@@ -129,7 +131,8 @@ textarea {
   }
         
   /*------------------- Base Styles -------------------*/
-   .content-wrapper {
+   /*Giving al the content-wrappers the same style globally*/
+  .content-wrapper {
     display: flex;
     justify-content: center;
     align-items: stretch;
@@ -138,31 +141,34 @@ textarea {
   }
     /*------------------- Mobile Styles -------------------*/
 
-   /*---Order Body Styles---*/
+  .body-wrapper{
+    margin: 30px 0;
+  }
+
+  /*---Card Body Styles---*/
    .card-body {
     width: 325px;
-    margin: 45px 0 0;
     background-color:#fff;
     box-shadow: 0px 7px 29px 0px rgba(100, 100, 111, 0.2);
     border-radius: 20px;
    }
 
-   /*-Order Header Styles-*/
+   /*-Card Header Styles-*/
   .hero-area {
-    background-image: url('../img/illustration-hero.svg');
+    background-image: url(../img/illustration-hero.svg);
     background-size: cover;
     min-height: 200px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
   }
 
-   /*-Order Main Styles-*/
+   /*-Card Main Styles-*/
    .card-main .content-wrapper {
      margin: 20px;
      padding: 0;
    }
 
-   /*Order Description Section Styles*/
+   /*Card's Order Description Section Styles*/
    .card-description {
     display: flex;
     align-items: center;
@@ -180,8 +186,7 @@ textarea {
      padding: 0 10px;
    }
   
-   /*Order Plan Section Styles*/
-
+   /*Card's Order Plan Section Styles*/
    .card-plan {
      background-color: hsl(225, 100%, 98%);
      
@@ -213,7 +218,7 @@ textarea {
     color: hsla(243, 59%, 76%, 1);
    }
 
-   /*Annual Plan Subsection Styles*/
+   /*Card's Annual Plan Subsection Styles*/
    .annual-plan .content-wrapper {
      flex-direction: column;
      margin: 10px 30px 5px 25px;
@@ -223,7 +228,7 @@ textarea {
      margin: 0;
    }
 
-   /*Order Plan Section Styles*/
+   /*Card's Order Plan Section Styles*/
    .card-payment {
      display: flex;
      flex-direction: column;
@@ -390,17 +395,22 @@ textarea {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
-   @media only screen and (min-width: 1440px) {
+   @media only screen and (min-width:1440px) {
     /*Desktop styles here*/
-
-    /*body {
-      background: url('../img/pattern-pattern-background-desktop.svg');
-    }*/
-
-    .body-wrapper {
-      background-image: url('../img/pattern-pattern-background-desktop.svg');
+     
+    body {
+      background-image: url(../img/pattern-pattern-background-desktop.svg);
     }
+
+    /*Using the desktop's background*/
+    .body-wrapper {
+      /*background-image: url(../img/pattern-pattern-background-desktop.svg);*/
+     /* background: url(../img/pattern-pattern-background-desktop.svg);*/
+     margin: 50px 0;
+    }
+
     
+
       .card-body {
       margin: 100px 0 0;
     }
