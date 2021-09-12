@@ -104,6 +104,7 @@ textarea {
     background-position: top;
     background-size: contain;
   }
+
   /*To keep the card and the footer vertically align*/
   .body-wrapper {
     display: flex;
@@ -139,36 +140,40 @@ textarea {
     flex-direction: column;
     margin: 10px;
   }
-    /*------------------- Mobile Styles -------------------*/
-
+  
+  /*------------------- Mobile Styles -------------------*/
   .body-wrapper{
-    margin: 30px 0;
+    margin: 50px 0 0;
   }
 
   /*---Card Body Styles---*/
    .card-body {
-    width: 325px;
+    width: 90%;
     background-color:#fff;
     box-shadow: 0px 7px 29px 0px rgba(100, 100, 111, 0.2);
-    border-radius: 20px;
-   }
 
-   /*-Card Header Styles-*/
+  /*Setting card's round borders*/
+    border-radius: 20px;
+  }
+
+  /*---Card Header Styles---*/
   .hero-area {
+    min-height: 200px;
     background-image: url(../img/illustration-hero.svg);
     background-size: cover;
-    min-height: 200px;
+
+  /*Setting also hero image round borders*/
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
   }
 
-   /*-Card Main Styles-*/
+   /*---Card Main Styles---*/
    .card-main .content-wrapper {
      margin: 20px;
      padding: 0;
    }
 
-   /*Card's Order Description Section Styles*/
+   /*---Card's Order Description Section Styles---*/
    .card-description {
     display: flex;
     align-items: center;
@@ -186,7 +191,7 @@ textarea {
      padding: 0 10px;
    }
   
-   /*Card's Order Plan Section Styles*/
+   /*---Card's Order Plan Section Styles---*/
    .card-plan {
      background-color: hsl(225, 100%, 98%);
      
@@ -218,7 +223,7 @@ textarea {
     color: hsla(243, 59%, 76%, 1);
    }
 
-   /*Card's Annual Plan Subsection Styles*/
+   /*---Card's Annual Plan Subsection Styles---*/
    .annual-plan .content-wrapper {
      flex-direction: column;
      margin: 10px 30px 5px 25px;
@@ -228,7 +233,7 @@ textarea {
      margin: 0;
    }
 
-   /*Card's Order Plan Section Styles*/
+   /*---Card's Order Plan Section Styles---*/
    .card-payment {
      display: flex;
      flex-direction: column;
@@ -272,7 +277,7 @@ textarea {
      color:black;
    }
 
-   /*Footer section*/
+   /*---Footer section---*/
    footer .attribution { 
     text-align: center; 
     margin: 40px 0 0;
@@ -283,7 +288,7 @@ textarea {
      margin: 0;
    }
 
-   /*To have the funny underline effect*/
+  /*To have the funny underline effect*/
   .underline{
     position: relative;
     text-decoration: none;
@@ -398,20 +403,17 @@ textarea {
    @media only screen and (min-width:1440px) {
     /*Desktop styles here*/
      
-    body {
-      background-image: url(../img/pattern-pattern-background-desktop.svg);
-    }
-
     /*Using the desktop's background*/
-    .body-wrapper {
-      /*background-image: url(../img/pattern-pattern-background-desktop.svg);*/
-     /* background: url(../img/pattern-pattern-background-desktop.svg);*/
-     margin: 50px 0;
+    body {
+      background-image: url(../img/pattern-background-desktop.svg);
     }
 
     
+    .body-wrapper {
+     margin: 50px 0;
+    }
 
-      .card-body {
+    .card-body {
       margin: 100px 0 0;
     }
 
