@@ -16,8 +16,6 @@ This is a solution to the [Order summary card challenge on Frontend Mentor](http
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
 
 ### The challenge
@@ -29,13 +27,15 @@ Users should be able to:
 ### Screenshot
 
 Mobile
-![](.design/mobil-design.jpg)
+
+![](https://github.com/aimaraqvo/order-summary-component/blob/main/design/mobile-design.jpg?raw=true)
 
 Desktop
-![](.design/desktop-design.jpg)
+
+![](https://github.com/aimaraqvo/order-summary-component/blob/main/design/desktop-design.jpg?raw=true)
 
 ### Links
-- Live Site URL: [Add live site URL here](https://aimaraqvo.github.io/order-summary-component/)
+- Live Site URL: [here](https://aimaraqvo.github.io/order-summary-component/)
 
 ## My process
 
@@ -45,7 +45,7 @@ Desktop
 - CSS custom properties
 - Flexbox
 - Mobile-first workflow
-- [Google  Fonts] (https://googlefonts.com)
+- [Google Fonts](https://googlefonts.com)
 
 
 ### What I learned
@@ -55,7 +55,6 @@ Well, this is my first challenge at Frontend Mentor, and I loved every part of i
 1. The amazing use of SVGs in web development. 
 2. ALWAYS, but ALWAYS check your links. "Of course," you will say. Fun fact: I spent almost 5 days trying to understand what happened to my SVG because it didn't show up. Only to realize that "it" was a typo in my link :\ 
 3. Don't underestimate the challenges. The challenge seemed easy, but it took me 2.5 weeks to finish, lol.
-4. To 
 
 ### Continued development
 
