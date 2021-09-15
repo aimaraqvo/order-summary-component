@@ -29,13 +29,13 @@ Users should be able to:
 ### Screenshot
 
 Mobile
-![Mobile](https://github.com/aimaraqvo/order-summary-component/blob/main/design/mobile-design.jpg?raw=true)
+![](https://github.com/aimaraqvo/order-summary-component/blob/main/design/mobile-design.jpg?raw=true)
 
 Desktop
-![Desktop](https://github.com/aimaraqvo/order-summary-component/blob/main/design/desktop-design.jpg?raw=true)
+![](https://github.com/aimaraqvo/order-summary-component/blob/main/design/desktop-design.jpg?raw=true)
 
 ### Links
-- Live Site URL: [here](https://aimaraqvo.github.io/order-summary-component/)
+- Live Site URL:[here](https://aimaraqvo.github.io/order-summary-component/)
 
 ## My process
 
@@ -45,7 +45,7 @@ Desktop
 - CSS custom properties
 - Flexbox
 - Mobile-first workflow
-- [Google  Fonts] (https://googlefonts.com)
+- [Google Fonts](https://googlefonts.com)
 
 
 ### What I learned
