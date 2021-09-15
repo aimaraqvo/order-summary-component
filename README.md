@@ -27,7 +27,6 @@ Users should be able to:
 ### Screenshot
 
 Mobile
-<<<<<<< HEAD
 
 ![](https://github.com/aimaraqvo/order-summary-component/blob/main/design/mobile-design.jpg?raw=true)
 
@@ -37,15 +36,6 @@ Desktop
 
 ### Links
 - Live Site URL: [here](https://aimaraqvo.github.io/order-summary-component/)
-=======
-![](https://github.com/aimaraqvo/order-summary-component/blob/main/design/mobile-design.jpg?raw=true)
-
-Desktop
-![](https://github.com/aimaraqvo/order-summary-component/blob/main/design/desktop-design.jpg?raw=true)
-
-### Links
-- Live Site URL:[here](https://aimaraqvo.github.io/order-summary-component/)
->>>>>>> 7474e36dd8c3836e5778e63cc20f819d32fc21cc
 
 ## My process
 
@@ -63,20 +53,14 @@ Desktop
 Well, this is my first challenge at Frontend Mentor, and I loved every part of it. 
 
 1. The amazing use of SVGs in web development. 
-<<<<<<< HEAD
 2. To ALWAYS, but ALWAYS check my links. "Of course," you will say. Fun fact: I spent almost 5 days trying to understand what happened to my SVG because it didn't show up. Only to realize that "it" was a typo in my link :\ 
 3. To Don't underestimate the challenges. The challenge seemed easy, but it took me 2.5 weeks to finish, lol.
-=======
-2. ALWAYS, but ALWAYS check your links. "Of course," you will say. Fun fact: I spent almost 5 days trying to understand what happened to my SVG because it didn't show up. Only to realize that "it" was a typo in my link :\ 
-3. Don't underestimate the challenges. The challenge seemed easy, but it took me 2.5 weeks to finish, lol.
->>>>>>> 7474e36dd8c3836e5778e63cc20f819d32fc21cc
 
 ### Continued development
 
 - I need to improve my layout skills. I have to remind myself to keep things simple. You    can waste a TON of time if you do the project layout the wrong way (in my case the complex way). 
 - Although I LOVE CSS, I feel like I need to sharpen my code. Maybe I'm using too many margins and paddings because I still can't control Flexbox. 
 - I'm worried about making my code readable to other coders.
-- Take a counsious 
 
 ## Author
 
