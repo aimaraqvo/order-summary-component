@@ -29,13 +29,13 @@ Users should be able to:
 ### Screenshot
 
 Mobile
-![](.design/mobil-design.jpg)
+![Mobile](https://github.com/aimaraqvo/order-summary-component/blob/main/design/mobile-design.jpg?raw=true)
 
 Desktop
-![](.design/desktop-design.jpg)
+![Desktop](https://github.com/aimaraqvo/order-summary-component/blob/main/design/desktop-design.jpg?raw=true)
 
 ### Links
-- Live Site URL: [Add live site URL here](https://aimaraqvo.github.io/order-summary-component/)
+- Live Site URL: [here](https://aimaraqvo.github.io/order-summary-component/)
 
 ## My process
 
